@@ -1,0 +1,14 @@
+image: maven:latest
+
+pages:
+  stage: deploy
+  script:
+    - mvn -o -Dmaven.repo.local=.m2/repository javadoc:aggregate -Dmaven.compiler.source=11 -Dmaven.compiler.target=11 -DadditionalJOptions=-Xdoclint:none -Dmaven.javadoc.failOnError=false
+    - mkdir .public          
+    - cp -r target/site/apidocs/* .public
+    - mv .public public 
+  artifacts:
+    paths:
+      - public
+  only:
+    - dev

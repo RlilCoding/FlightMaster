@@ -25,7 +25,7 @@ Pour obtenir le fichier JAR de l'application Flightmaster, naviguez vers `flight
 
 La documentation Java est automatiquement mise à jour à chaque commit et est accessible via le lien suivant :
 
-[http://p2306713.pages.univ-lyon1.fr/flightmaster](http://p2306713.pages.univ-lyon1.fr/flightmaster/)
+[https://rlilcoding.github.io/FlightMaster/](https://rlilcoding.github.io/FlightMaster/)
 
 ## Exécution des Tests
 
